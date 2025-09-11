@@ -46,6 +46,14 @@ body{
   background-color: white;
 }
 
+#root{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Header */
 header{
   background-color: #f54f50;
@@ -74,4 +82,58 @@ header nav .nav-title{
   font-weight: 800;
   font-size: 1.2rem;
   margin-left: 1rem;
+}
+
+/* Journal entry */
+.journal-entry{
+  display: flex; 
+  color: black;
+  margin: 0 20px;
+  min-width: 600px;
+  max-width: 850px;
+}
+
+.main-img-container{
+  width: 125px;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 10px;
+  /* Phần tử không bị co lại khi conatiner hết chỗ */
+  flex-shrink: 0;
+}
+
+.main-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.info{
+  text-align: left;
+  margin-left: 15px;
+  padding: 0;
+}
+
+.info .marker {
+  width: 10px;
+  margin-right: 10px;
+}
+
+.info span{
+  font-weight: 600;
+  margin-right: 20px;
+}
+
+.info a {
+  font-weight: 400;
+  color: black;
+  text-decoration: underline;
+}
+
+.info h2, p {
+  margin: 5px;
+}
+
+.info .date {
+  font-weight: 600;
 }
