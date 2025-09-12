@@ -23,7 +23,13 @@ export default function App() {
         // date      = {item.date}
         // text      = {item.text}
         // mapsLink  = {item.mapsLink}
-        entry = {item}
+
+        // pass object as property
+        // entry = {item}
+
+        // pread object as props
+        {...item}
+
       />)
   });
 
