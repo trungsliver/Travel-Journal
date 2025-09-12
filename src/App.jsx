@@ -14,25 +14,28 @@ export default function App() {
   });
 
   const travelElement = travelData.map(item => {
-    return <Entry
-      img       = {item.img}
-      title     = {item.title}
-      country   = {item.country}
-      date      = {item.date}
-      text      = {item.text}
-      mapsLink  = {item.mapsLink}
-    />
+    return ( 
+      <Entry
+        key       = {item.id}
+        // img       = {item.img}
+        // title     = {item.title}
+        // country   = {item.country}
+        // date      = {item.date}
+        // text      = {item.text}
+        // mapsLink  = {item.mapsLink}
+        entry = {item}
+      />)
   });
 
   return (
     <>
       <Header />
-      
+
       <main>
         {travelElement}
       </main>
 
-      {jokeElement}
+      {/* {jokeElement} */}
     </>
   )
 }
