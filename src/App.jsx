@@ -41,7 +41,7 @@ export default function App() {
         {travelElement}
       </main>
 
-      {/* {jokeElement} */}
+      {jokeElement}
     </>
   )
 }
